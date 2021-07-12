@@ -11,10 +11,14 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f3f1ff;
+  overflow-x: hidden;
 }
 
-a {
+a,
+span {
   text-decoration: none;
+  line-height: 0;
+  vertical-align: middle;
 }
 
 img {
@@ -22,8 +26,10 @@ img {
 }
 
 .container {
-  width: 870px;
+  width: 900px;
+  max-width: 100%;
   margin: auto;
+  padding: 0 15px;
 }
 
 .bg {
@@ -207,11 +213,52 @@ img {
   align-items: center;
   background-color: #ffe4e8;
   color: #ff4a60;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 20px;
   font-size: 14px;
 }
 
 .course-duration span {
   margin-left: 5px;
+}
+
+/* Media Queries */
+
+/* max tablet */
+@media (max-width: 991px) {
+  .players,
+  .blogs,
+  .latest-courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogs {
+    grid-gap: 30px;
+  }
+
+  .blog {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-thumbnail {
+    width: 100%;
+  }
+
+  .blog-info {
+    margin-left: 0;
+  }
+}
+
+/* max mobile */
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .players,
+  .blogs,
+  .latest-courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
