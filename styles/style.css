@@ -1,0 +1,217 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* utilities */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f1ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 870px;
+  margin: auto;
+}
+
+.bg {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 35px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #562eff;
+  margin-bottom: 40px;
+}
+
+.division-divider {
+  margin: 30px 0;
+}
+
+/* header styles */
+#header-area {
+  background-color: #562eff;
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 16px;
+  font-weight: 400;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0 18px;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
+.author-profile {
+  margin-left: 18px;
+}
+
+.author-profile img {
+  width: 50px;
+}
+
+/* top players styles */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+}
+
+.player-image {
+  width: 56px;
+}
+
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+/* top blogs styles */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 25px;
+  grid-column-gap: 10px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+}
+
+.blog-thumbnail {
+  width: 177px;
+}
+
+.blog-info {
+  margin-left: 16px;
+}
+
+.blog-title {
+  font-size: 20px;
+}
+
+.blog-author {
+  font-size: 16px;
+  color: #9f9f9f;
+  margin-top: 6px;
+}
+
+.blog-author a {
+  color: #562eff;
+}
+
+/* latest courses styles */
+.latest-courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.course {
+  padding: 10px;
+  box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.course-title {
+  font-size: 20px;
+}
+
+.course-author {
+  margin-top: 6px;
+}
+
+.course-author a {
+  color: #ed6b4f;
+}
+
+.course-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  color: #a2a2a2;
+  font-size: 12px;
+}
+
+.course-rating i.filled {
+  color: #ffc014;
+}
+
+.course-rating i.empty {
+  color: #aeaeae;
+  opacity: 0.6;
+}
+
+.course-rating span {
+  margin-left: 10px;
+}
+
+.course-duration {
+  display: flex;
+  align-items: center;
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.course-duration span {
+  margin-left: 5px;
+}
