@@ -135,11 +135,13 @@ img {
 }
 
 .blog-thumbnail {
-  width: 177px;
+  width: 180px;
+  line-height: 0;
 }
 
 .blog-info {
   margin-left: 16px;
+  width: calc(100% - 180px);
 }
 
 .blog-title {
